@@ -1,0 +1,10 @@
+{
+    "editor.defaultFoldingRangeProvider": "vscode.html-language-features",
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "[jsonc]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    }
+}
