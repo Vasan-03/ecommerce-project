@@ -23,10 +23,7 @@
 
 <body>
     <div class="justify-content-center d-flex gap-7 landing_styles">
-        <!-- <a class="text-success">Delivery and Payment</a>
-        <a class="text-success">Blog </a>
-        <a class="text-success">About Us </a>
-        <a class="text-success">Contact Us</a> </a> -->
+      
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
               
@@ -105,24 +102,16 @@
                         
                         <label for="Tea">Price:$</label>
                         <span id="amountLabel1">0.00</span>
-                        <!-- <input type="number" placeholder="Enter  gram" id="gramsInput" /> -->
                         <div class="row">
                             <div class="col-sm-6 ">
-                                <input type="number" placeholder=" price" id="gramsInput1" />
+                                <input type="number" placeholder=" enter a kg" id="gramsInput1" />
                             </div>
                             <div class="col-sm-6">
-                                <div class="input-group">
-                                    <input type="text" placeholder="Select " class="form-control" id="unitInput1" list="unitList1">
-                                    <datalist id="unitList1">
-                                        <option value="gm">gm</option>
-                                        <option value="kg">kg</option>
-                                    </datalist>
-                                </div>
                             </div>
                         </div>
                         <button onclick="calculatePrice1()">Click</button>
 
-                            <!-- <p id="price" value="price">Price: $3.00</p> -->
+                            
 
                         
                         
@@ -144,16 +133,15 @@
                         <span id="amountLabel2">0.00</span>
                         <div class="row">
                             <div class="col-sm-6">
-                                <input type="number" placeholder=" price" id="gramsInput2" />
+                                <input type="number" placeholder=" enter a kg" id="gramsInput2" />
                             </div>
-                            <div class="col-sm-6  ">
-                                <input type="number" placeholder=" gm/kg"  id="priceInput2" />
-                                
-                            </div>
+                       
+                            
+                    
                         </div>
                         <button onclick="calculatePrice2()">Click</button>
 
-                            <!-- <p id="price" value="price">Price: $3.00</p> -->
+                            
 
                         
                         
@@ -175,16 +163,13 @@
                         <span id="amountLabel3">0.00</span>
                         <div class="row">
                             <div class="col-sm-6">
-                                <input type="number" placeholder=" price" id="gramsInput3" />
+                                <input type="number" placeholder=" enter a kg" id="gramsInput3" />
                             </div>
-                            <div class="col-sm-6  ">
-                                <input type="number" placeholder="gm/kg"  id="priceInput3" />
-                                
-                            </div>
+                          
                         </div>
                         <button onclick="calculatePrice3()">Click</button>
 
-                            <!-- <p id="price" value="price">Price: $3.00</p> -->
+                           
 
                         
                         
@@ -206,16 +191,13 @@
                         <span id="amountLabel4">0.00</span>
                         <div class="row">
                             <div class="col-sm-6">
-                                <input type="number" placeholder=" price" id="gramsInput4" />
+                                <input type="number" placeholder=" enter a kg" id="gramsInput4" />
                             </div>
-                            <div class="col-sm-6  ">
-                                <input type="number" placeholder=" gm/kg"  id="priceInput4" />
-                                
-                            </div>
+                           
                         </div>
                         <button onclick="calculatePrice4()">Click</button>
 
-                            <!-- <p id="price" value="price">Price: $3.00</p> -->
+
 
                         
                         
@@ -237,12 +219,9 @@
                             <span id="amountLabel5">0.00</span>
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <input type="number" placeholder=" price" id="gramsInput5" />
+                                    <input type="number" placeholder=" enter a kg" id="gramsInput5" />
                                 </div>
-                                <div class="col-sm-6  ">
-                                    <input type="number" placeholder="  gm/kg"  id="priceInput5" />
-                                    
-                                </div>
+                               
                             </div>
                             
                             <button onclick="calculatePrice5()">Click</button>
@@ -281,65 +260,40 @@
              
            
          <script>
-        //    function calculatePrice1() {
-        //     var gramsInput1 = document.getElementById("gramsInput1").value;
-        //                         var priceInput1 = document.getElementById("priceInput1").value;
-                                
-        //                         var totalPrice = gramsInput1 * priceInput1;
-        //                         document.getElementById("amountLabel1").textContent =  totalPrice.toFixed(2);
-                             
-        //                  }
+       
         function calculatePrice1() {
         var price = parseFloat(document.getElementById('gramsInput1').value);
-        var unit = document.getElementById('unitInput1').value;
-
-        if (unit === 'kg') {
-            price *= 1000; // Convert to grams
-        }
-
-        document.getElementById('amountLabel1').textContent = price.toFixed(2);
+       
+        document.getElementById('amountLabel1').textContent = price*100;
     }
         
     
                          function calculatePrice2() {
-                            // var gramsInput2 = document.getElementById("gramsInput2").value;
-                            //     var priceInput2 = document.getElementById("priceInput2").value;
-                                
-                            //     var totalPrice = gramsInput2 * priceInput2;
+                          
                             var price = parseFloat(document.getElementById('gramsInput2').value);
-        var unit = document.getElementById('unitSelect2').value;
-
-        if (unit === 'kg') {
-            price *= 100; // Convert to grams
-        }
-                                document.getElementById("amountLabel2").textContent =  totalPrice.toFixed(2);
+      
+                                document.getElementById("amountLabel2").textContent = price*400;
                              
                          }
                          function calculatePrice3() {
                                 
                                 var gramsInput3 = document.getElementById("gramsInput3").value;
-                                var priceInput3 = document.getElementById("priceInput3").value;
-                                
-                                var totalPrice = gramsInput3 * priceInput3;
-                                document.getElementById("amountLabel3").textContent =  totalPrice.toFixed(2);
+                              
+                                document.getElementById("amountLabel3").textContent =  gramsInput3*300;
                              
                          }
                          function calculatePrice4() {
                                 
                             var gramsInput4 = document.getElementById("gramsInput4").value;
-                                var priceInput4 = document.getElementById("priceInput4").value;
                                 
-                                var totalPrice = gramsInput2 * priceInput2;
-                                document.getElementById("amountLabel4").textContent =  totalPrice.toFixed(2);
+                                document.getElementById("amountLabel4").textContent =  gramsInput4*250;
                              
                          }
                          function calculatePrice5() {
                                 
                             var gramsInput5 = document.getElementById("gramsInput5").value;
-                                var priceInput5 = document.getElementById("priceInput5").value;
-                                
-                                var totalPrice = gramsInput5 * priceInput5;
-                                document.getElementById("amountLabel5").textContent =  totalPrice.toFixed(2);
+                               
+                                document.getElementById("amountLabel5").textContent =gramsInput5*150;
                              
                          }
 
